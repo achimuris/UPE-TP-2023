@@ -32,6 +32,15 @@ namespace BLL
 			return objDAL.DevolverCarreras();
 		}
 
+		private List<Materia> _materias;
+
+		public List<Materia> Materias
+		{
+			get { return _materias; }
+			set { _materias = value; }
+		}
+
+
 
 		public DataTable RetonarMaterias(int idMateria)
 		{ 
